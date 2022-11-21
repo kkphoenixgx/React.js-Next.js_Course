@@ -1,0 +1,40 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 3vh;
+}
+
+.footer p{
+    padding: 1%;
+}
+.footer a{
+    text-decoration: none;
+    color:rgb(170, 215, 221);
+    transition-duration: 500ms;
+}
+.footer a:hover{
+    color: rgb(20, 239, 255);
+}
+
+/* -------- Curved shape -------- */
+
+.custom-shape-divider-top-1668259735 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.custom-shape-divider-top-1668259735 svg {
+    position: relative;
+    display: block;
+    width: calc(218% + 1.3px);
+    height: 138px;
+}
+.custom-shape-divider-top-1668259735 .shape-fill {
+    fill: #000000;
+}

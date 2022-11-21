@@ -1,0 +1,27 @@
+.otherPagesToCheck{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.otherPagesToCheck a{
+    text-decoration: none;
+    color:rgb(170, 215, 221);
+    transition-duration: 500ms;
+}
+.otherPagesToCheck a:hover{
+    color: rgb(20, 239, 255);
+}
+.otherPagesToCheck h2{
+    color:rgb(20, 239, 255);
+    margin-bottom: 5vh;
+}
+
+.threeJsPages{
+    text-align: start;
+    margin: 0 0 10vh 5vh;
+}
+.threeJsPages h3{
+    margin-bottom: 3vh;
+}

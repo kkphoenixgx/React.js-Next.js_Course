@@ -1,0 +1,17 @@
+nav{
+    height: 5vh;
+    background-color: rgb(11, 19, 47);
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+nav li {
+    color: white;
+    margin-left: 3%;
+    list-style-type: none;
+    transition: 0.7s ease-in-out;
+}
+nav li:hover {
+    color: rgb(20, 239, 255);
+}

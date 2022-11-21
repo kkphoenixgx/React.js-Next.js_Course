@@ -16,13 +16,18 @@ class App extends Component {
     this.setState({ counter: counter2 })
   }
   
+  componentDidMount(){
+    const div = document.createElement('p')
+    document.querySelector('section').appendChild(div, 'P')
+  }
+
   render(){
      return (
       <div className="App">
         
         <header className="App-header">
           <h1> 
-            {"Hello kkphoenix, welcome to your react text lab 👨‍🔬"} 
+            {"Hello kkphoenix, welcome to your react text lab 👨‍🔬"}
           </h1>
             <img src={logo} className="App-logo" alt="logo" /> 
         </header>
