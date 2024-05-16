@@ -5,14 +5,15 @@ import { useFrame } from '@react-three/fiber';
 import {Text } from '@react-three/drei'
 
 
-export const EllipticalRotation = ({ a, b, speed, text, path, rotateInZAxle }) => {
+export const EllipticalRotation = ({ a, b, c, speed, text, path, rotateInZAxle }) => {
   const groupRef = useRef();
   const navigate = useNavigate();
 
   const calculateEllipsePoint = (theta) => {
     const x = a * Math.cos(theta);
     const y = b * Math.sin(theta);
-    return { x, y };
+    const z = c * Math.sin(theta); // Aumenta o raio no eixo z
+    return { x, y, z };
   };
 
   const handleClick = () => {
@@ -21,16 +22,17 @@ export const EllipticalRotation = ({ a, b, speed, text, path, rotateInZAxle }) =
 
   useFrame(() => {
     
+    groupRef.current.rotation.z += speed;
     if(rotateInZAxle){
       groupRef.current.rotation.y += speed * 0.5; 
     }
 
-    groupRef.current.rotation.z += speed;
-
+    // Calcula a posição da elipse
     const theta = groupRef.current.rotation.z;
-    const { x, y } = calculateEllipsePoint(theta);
+    const { x, y, z } = calculateEllipsePoint(theta);
 
-    groupRef.current.position.set(x, y, 0);
+    // Define a nova posição do objeto
+    groupRef.current.position.set(x, y, z);
   });
 
   return (
