@@ -2,7 +2,7 @@ import '../Stylesheet/Header.css'
 
 /*-------- Assets -------- */
 import logo from '../assets/img/logo192.png'
-import mePhoto from '../assets/img/fotoPerfil.jpg'
+import logoCompleta from '../assets/img/logoCompleta.png'
 
 /* -------- Component -------- */
 export function Header() {
@@ -15,7 +15,7 @@ export function Header() {
           <h1>React Exercises</h1>
         </div>
 
-        <a href="https://github.com/kkphoenixgx"> <img className='kkpPhoto' src={mePhoto} alt="kkphoenix"/> </a>
+        <a href="https://github.com/kkphoenixgx"> <img className='kkpPhoto' src={logoCompleta} alt="kkphoenix"/> </a>
 
       </header>
     )

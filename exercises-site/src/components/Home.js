@@ -1,29 +1,9 @@
 import React from 'react';
 import '../Stylesheet/styles/Home.css'
 import { Canvas  } from '@react-three/fiber';
-import { Html, OrbitControls } from '@react-three/drei';
-import { Link } from 'react-router-dom';
+import { OrbitControls } from '@react-three/drei';
+import { EllipticalRotation } from './ElipticalRotation.js';
 
-const Home = () => {
-  return (
-    <div className='home'>
-      <Canvas>
-        <ambientLight intensity={0.1} />
-        <directionalLight color="blue" position={[0, 0, 5]} />
-        <AnimateBox />
-        <Html position={[-5, 3, 0]} >
-          <h1 className="exerciseOneLink" onClick={handleClickLink}>-Exercise 1</h1>
-        </Html>
-      </Canvas>
-
-      <Link to='/exercise1' id="Exercise1Link" style={{display: "none"}}> -Exercise1</Link>
-    </div>
-  );
-};
-
-const handleClickLink = () => {
-  document.querySelector('#Exercise1Link').click();
-}
 
 const AnimateBox = () => {
 
@@ -36,5 +16,23 @@ const AnimateBox = () => {
   );
 };
 
+const Home = () => {
+
+  return (
+    <div className='home'>
+      <Canvas>
+        <ambientLight intensity={0.1} />
+        <directionalLight color="blue" position={[0, 0, 5]} />
+        <AnimateBox />
+
+        <group>
+          <EllipticalRotation a={5} b={3} speed={0.01} text={"Exercise1"} path={"./exercise1" } rotateInZAxle={false}/>
+          <EllipticalRotation a={4} b={2} speed={0.015} text={"Exercise2"} path={"./exercise2"} rotateInZAxle={true}/>
+        </group>
+
+      </Canvas>
+    </div>
+  );
+};
 
 export default Home;

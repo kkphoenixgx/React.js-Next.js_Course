@@ -35,7 +35,6 @@ header .kkpPhoto{
     pointer-events: none;
     align-self: center;
     margin-top: 1vh;
-    border: double;
     color: black;
 }
 
