@@ -18,7 +18,7 @@ import StatsPanel from './components/Threejs/statsPanel.js';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter  basename="/react-exercises-site">
       <Header></Header>
       <NavBar></NavBar>
       <Routes>

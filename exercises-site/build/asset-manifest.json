@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-exercises-site/static/css/main.a0a64ee1.css",
+    "main.js": "/react-exercises-site/static/js/main.6432fd6a.js",
+    "static/js/787.60bc7a3c.chunk.js": "/react-exercises-site/static/js/787.60bc7a3c.chunk.js",
+    "static/media/logoCompleta.png": "/react-exercises-site/static/media/logoCompleta.ce31b0514d79b1eeb33f.png",
+    "index.html": "/react-exercises-site/index.html",
+    "main.a0a64ee1.css.map": "/react-exercises-site/static/css/main.a0a64ee1.css.map",
+    "main.6432fd6a.js.map": "/react-exercises-site/static/js/main.6432fd6a.js.map",
+    "787.60bc7a3c.chunk.js.map": "/react-exercises-site/static/js/787.60bc7a3c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0a64ee1.css",
+    "static/js/main.6432fd6a.js"
+  ]
+}

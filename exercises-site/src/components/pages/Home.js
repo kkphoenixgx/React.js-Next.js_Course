@@ -33,7 +33,7 @@ const Home = () => {
 
   let paths = [
     { name: "Exercise1", path: "../react-exercises/exercise1", a: 7, b: 2, c: 2, speed: 0.01 },
-    { name: "Exercise2", path: "../react-exercises/exercise2", a:4, b: 2, c: 3, speed: 0.015 }
+    // { name: "Exercise2", path: "../react-exercises/exercise2", a:4, b: 2, c: 3, speed: 0.015 }
   ]
 
 
@@ -45,7 +45,7 @@ const Home = () => {
         <PerspectiveCamera makeDefault position={[0, 0, 15]} ></PerspectiveCamera>
         
         <Suspense fallback={"Loading..."}>
-          <RenderPhoenix url={"/logo_parteFenix.glb"}/>
+          <RenderPhoenix url="/react-exercises-site/logo_parteFenix.glb" />
         </Suspense>
 
         <group>
