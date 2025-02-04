@@ -1,0 +1,45 @@
+.reactExercise{
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10%;
+}
+
+.reactExercise .h1-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+
+.reactExercise .h1-container img{
+  width: 40px;
+  animation: spin linear 5s infinite;
+}
+
+.reactExercise ul{
+  margin-top: 5vh;
+}
+
+.reactExercise ul li{
+  text-align: left;
+  margin-left: 5%;
+}
+.reactExercise ul li a{
+  text-decoration: none;
+  color: cyan;
+}
+
+/* ----------- Animações ----------- */
+
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+
+}
+

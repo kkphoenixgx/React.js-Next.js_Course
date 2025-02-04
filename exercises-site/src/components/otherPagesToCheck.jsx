@@ -1,4 +1,4 @@
-import "../Stylesheet/styles/otherPagesToCheck.css"
+import "../Stylesheet/pages/otherPagesToCheck.css"
 import { Link } from "react-router-dom"
 
 import {Emitter} from '../utils/eventHandle.js'
@@ -19,7 +19,7 @@ export default function OtherPagesToCheck(){
             <div className="threeJsPages">
                 <h3>Three.js with react-fiber and drei learning pages</h3>
                 <ul>
-                    <li onClick={handleClick}> <Link to="/threeJs/pageOne" data-id="/threeJs/pageOne" >Page one</Link> </li>
+                    <li onClick={handleClick}> <Link to="/threeJs" data-id="/threeJs" >React Three Fiber Index</Link> </li>
                 </ul>
             </div>
         </div>

@@ -1,0 +1,17 @@
+.threejsExercises{
+  background-color: #000000;
+  color: white;
+  padding: 10%;
+}
+.threejsExercises h1{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3%;
+}
+.threejsExercises a{
+  text-decoration: none;
+  color: #81dbff;
+}
+.threejsExercises ul{
+  margin-top: 3%;
+}

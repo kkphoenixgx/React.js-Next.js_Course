@@ -1,0 +1,11 @@
+.notFoundPage{
+  height: 50vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notFoundPage p{
+  font-size: 2rem;
+}

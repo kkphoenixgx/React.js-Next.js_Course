@@ -1,8 +1,8 @@
-import '../Stylesheet/Header.css'
+import '../../Stylesheet/shared/Header.css'
 
 /*-------- Assets -------- */
-import logo from '../assets/img/logo192.png'
-import logoCompleta from '../assets/img/logoCompleta.png'
+import logo from '../../assets/img/logo192.png'
+import logoCompleta from '../../assets/img/logoCompleta.png'
 
 /* -------- Component -------- */
 export function Header() {

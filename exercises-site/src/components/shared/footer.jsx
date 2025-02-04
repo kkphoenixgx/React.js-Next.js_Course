@@ -1,7 +1,9 @@
+import "../../Stylesheet/shared/Footer.css"
+
 import { useState } from "react";
 import { useLocation } from "react-router-dom"
-import "../Stylesheet/Footer.css"
-import OtherPagesToCheck from "./otherPagesToCheck";
+
+import OtherPagesToCheck from "../otherPagesToCheck";
 
 export const Footer = () => {
 

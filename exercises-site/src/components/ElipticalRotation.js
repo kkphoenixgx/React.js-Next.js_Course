@@ -38,10 +38,10 @@ export const EllipticalRotation = ({ a, b, c, speed, text, path, rotateInZAxle }
   return (
     <group ref={groupRef}>
       <Text
-        scale={[10, 10, 10]}
-        color="white" // default
-        anchorX="center" // default
-        anchorY="middle" // default
+        scale={[7, 7, 7]}
+        color="#81dbff"
+        anchorX="center"
+        anchorY="middle" 
         onClick={handleClick}
       >
         {text}
