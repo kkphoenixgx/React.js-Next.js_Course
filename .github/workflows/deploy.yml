@@ -3,10 +3,10 @@ name: Deploy Exercises Site
 on:
   push:
     paths:
-      - 'exercises-site/**'  # Apenas quando houver mudanças na pasta exercises-site
+      - 'exercises-site/**'
     branches:
-      - main  # Altere para a branch correta
-  workflow_dispatch:  # Permite rodar manualmente o workflow pela interface do GitHub
+      - master 
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
