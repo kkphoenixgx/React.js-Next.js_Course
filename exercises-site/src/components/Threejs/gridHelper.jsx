@@ -14,7 +14,7 @@ export const GridHelper = ()=>{
 
   return (
     <div className="gridHelper">
-      <h2>Here we are GridHelper to see and majure things...</h2>
+      <h2>Here we are GridHelper to see and majure things.</h2>
 
       <Canvas camera={{ position: [0, 3, 6] }}>
         <Polyhedron position={[-1, 2, 0]} polyhedron={polyhedron} canRotate={false} />
