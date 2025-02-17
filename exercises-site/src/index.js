@@ -15,6 +15,7 @@ import { ReactExercise } from './components/pages/ReactExercises.jsx';
 import NotFoundPage from './components/pages/NotFoundPage.jsx';
 import StatsPanel from './components/Threejs/statsPanel.js';
 import { AxesHelper } from './components/Threejs/AxesHelper.jsx';
+import { GridHelper } from './components/Threejs/gridHelper.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -31,6 +32,7 @@ root.render(
         <Route exact path="/threeJs" element={<ThreejsExercises/>}></Route>
         <Route exact path="/threeJs/statsPanel" element={<StatsPanel/>}></Route>
         <Route exact path="/threeJs/axesHelper" element={<AxesHelper/>}></Route>
+        <Route exact path="/threeJs/gridHelper" element={<GridHelper/>}></Route>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer></Footer>

@@ -6,7 +6,8 @@ export const ThreejsExercises = ()=>{
 
     let pages = [
         {link: "/threeJs/statsPanel", text: "Testing stats panel"},
-        {link: "/threeJs/axesHelper", text: "Testing axesHelper"}
+        {link: "/threeJs/axesHelper", text: "Testing axesHelper"},
+        {link: "/threeJs/gridHelper", text: "Testing GridHelper"}
     ]
 
     const handleClick = (event)=>{
