@@ -29,7 +29,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git clone --depth=1 "https://x-access-token:${{ secrets.DEPLOY_TOKEN }}@github.com/kkphoenixgx/react-exercises-site.git" deploy-repo
           rm -rf deploy-repo/*  # Remove arquivos antigos
-          cp -r exercises-site/build/* deploy-repo/  # Copia os arquivos gerados
+          cp -r exercises-site/build/. deploy-repo/
 
       - name: Commit e Push para o repositório de build
         run: |
