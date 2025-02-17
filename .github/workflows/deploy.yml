@@ -1,0 +1,42 @@
+name: Deploy Exercises Site
+
+on:
+  push:
+    paths:
+      - 'exercises-site/**'  # Apenas quando houver mudanças na pasta exercises-site
+    branches:
+      - main  # Altere para a branch que você usa como principal
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v3
+
+      - name: Ir para a pasta exercises-site
+        run: cd exercises-site
+
+      - name: Instalar dependências
+        working-directory: exercises-site
+        run: npm install
+
+      - name: Construir o projeto
+        working-directory: exercises-site
+        run: npm run build
+
+      - name: Configurar Git e clonar o repositório de deploy
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git clone --depth=1 https://x-access-token:${{ secrets.DEPLOY_TOKEN }}@github.com/SEU_USUARIO/SEU_REPO_BUILD.git deploy-repo
+          rm -rf deploy-repo/*  # Remove arquivos antigos
+          cp -r exercises-site/build/* deploy-repo/  # Copia os arquivos gerados
+
+      - name: Commit e Push para o repositório de build
+        run: |
+          cd deploy-repo
+          git add .
+          git commit -m "Deploy automático via GitHub Actions" || echo "Nada para commit"
+          git push origin main  # Alterar branch se necessário
