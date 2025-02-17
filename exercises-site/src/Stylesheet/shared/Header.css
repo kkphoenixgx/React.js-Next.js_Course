@@ -15,7 +15,8 @@ header h1{
     width: 43vw;
     color: white;
     font-size: 1.7em;
-    margin-left: 2%
+    margin-left: 2%;
+    text-wrap: nowrap;
 }
 header .container{
     display: flex;
