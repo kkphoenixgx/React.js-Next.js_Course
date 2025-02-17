@@ -3,7 +3,8 @@ name: Deploy Exercises Site
 on:
   push:
     branches:
-      - main  # Altere para a branch correta
+      - main  # Ação executada quando houver push na branch 'main'
+  workflow_dispatch:  # Permite rodar manualmente o workflow pela interface do GitHub
 
 jobs:
   build-and-deploy:
@@ -12,6 +13,9 @@ jobs:
     steps:
       - name: Checkout do repositório
         uses: actions/checkout@v3
+
+      - name: Ir para a pasta exercises-site
+        run: cd exercises-site
 
       - name: Instalar dependências
         working-directory: exercises-site
@@ -25,9 +29,9 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git clone --depth=1 "https://x-access-token:${{ secrets.DEPLOY_TOKEN }}@github.com/kkphoenixgx/react-exercises-site.git" deploy-repo
+          git clone --depth=1 https://x-access-token:${{ secrets.DEPLOY_TOKEN }}@github.com/kkphoenixgx/react-exercises-site.git deploy-repo
           rm -rf deploy-repo/*  # Remove arquivos antigos
-          cp -r exercises-site/build/. deploy-repo/
+          cp -r exercises-site/build/. deploy-repo/  # Copia os arquivos gerados
 
       - name: Commit e Push para o repositório de build
         run: |
