@@ -18,10 +18,10 @@
     margin-bottom: 5vh;
 }
 
-.threeJsPages{
+.threeJsPages, .otherPages{
     text-align: start;
     margin: 0 0 10vh 5vh;
 }
-.threeJsPages h3{
+.threeJsPages h3, .otherPages h3{
     margin-bottom: 3vh;
 }

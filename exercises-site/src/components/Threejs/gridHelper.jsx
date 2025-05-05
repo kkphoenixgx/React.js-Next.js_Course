@@ -1,11 +1,11 @@
-import '../../Stylesheet/exercises/threeJs/gridHelper.css'
+import './styles/gridHelper.css'
 
 import { Canvas } from '@react-three/fiber'
 import Polyhedron from './utils/Polyhedron'
 import { OrbitControls } from '@react-three/drei'
 import { BoxGeometry, SphereGeometry, DodecahedronGeometry} from 'three'
 
-export const GridHelper = ()=>{
+const GridHelper = ()=>{
   const polyhedron = [
     new BoxGeometry(),
     new SphereGeometry(0.785398),
@@ -27,3 +27,5 @@ export const GridHelper = ()=>{
     </div>
   )
 }
+
+export default GridHelper;

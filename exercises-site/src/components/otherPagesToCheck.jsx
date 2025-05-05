@@ -22,6 +22,14 @@ export default function OtherPagesToCheck(){
                     <li onClick={handleClick}> <Link to="/threeJs" data-id="/threeJs" >React Three Fiber Index</Link> </li>
                 </ul>
             </div>
+
+            <div className="otherPages">
+                <h3>Other Websites</h3>
+                <ul>
+                    <li> <a href="https://server-poem-site-utqk.vercel.app/">Poem Site</a> </li>
+                </ul>
+            </div>
+
         </div>
     )
 }

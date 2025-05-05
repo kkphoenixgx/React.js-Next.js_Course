@@ -11,36 +11,6 @@
   margin-bottom: 3%;
 }
 
-.react-exerciseOne-container .posts {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 30px;
-}
-
-.react-exerciseOne-container .post {
-  background-color: rgb(44, 44, 44);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  color: white;
-}
-
-.react-exerciseOne-container .posts :hover{
-  transform: scale(1.05);
-}
-
-.react-exerciseOne-container .post-content h3 {
-  width: 100%;
-  color: white;
-  text-align: center;
-  font-family: 1.5rem;
-  font-weight: bold;
-  text-transform: capitalize;
-}
-.react-exerciseOne-container .post-content p {
-  width: 100%;
-  text-align: center;
-  margin-top: 3%;
-  padding: 2%;
-}
 .react-exerciseOne-container img {
   max-width: 100%;
 }

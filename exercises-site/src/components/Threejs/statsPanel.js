@@ -3,7 +3,7 @@ import Polyhedron from './utils/Polyhedron'
 import * as THREE from 'three'
 import { Stats, OrbitControls } from '@react-three/drei'
 
-import "../../Stylesheet/exercises/threeJs/statsPanel.css"
+import "./styles//statsPanel.css"
 
 export default function StatsPanel() {
   const polyhedron = [
